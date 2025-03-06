@@ -14,10 +14,11 @@ export const Home = () => {
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
+        <div className="intro_sec d-block d-lg-flex align-items-center bg-bg-info">
           <div
-            className="h_bg-image order-1 order-lg-2 h-100 "
-            style={{ backgroundImage: `url(${introdata.your_img_url})` }}
+            className="h_bg-image order-1 order-lg-2 h-75 bg-info"
+            style={{ backgroundImage: 'url(/Images/img3.jpg)',backgroundSize:'cover' }}
+
           ></div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">

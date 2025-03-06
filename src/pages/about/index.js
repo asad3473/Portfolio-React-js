@@ -5,7 +5,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   dataabout,
   meta,
-  worktimeline,
   skills,
   services,
 } from "../../content_option";
@@ -14,11 +13,7 @@ export const About = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title> About | {meta.title}</title>
-          <meta name="description" content={meta.description} />
-        </Helmet>
+       
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">About me</h1>
@@ -35,7 +30,7 @@ export const About = () => {
             </div>
           </Col>
         </Row>
-        <Row className=" sec_sp">
+        {/* <Row className=" sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Work Timline</h3>
           </Col>
@@ -54,7 +49,7 @@ export const About = () => {
               </tbody>
             </table>
           </Col>
-        </Row>
+        </Row> */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
@@ -81,7 +76,7 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+            <h3 className="color_sec py-4">Services</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {

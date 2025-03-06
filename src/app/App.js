@@ -9,6 +9,9 @@ import AppRoutes from "./routes";
 import Headermain from "../header";
 import AnimatedCursor  from "../hooks/AnimatedCursor";
 import "./App.css";
+import { Portfolio } from "../pages/portfolio";
+import { About } from "../pages/about";
+import { ContactUs } from "../pages/contact";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -36,6 +39,9 @@ export default function App() {
         <Headermain />
         <AppRoutes />
       </ScrollToTop>
+      <Portfolio/>
+      <About/>
+      <ContactUs/>
     </Router>
   );
 }

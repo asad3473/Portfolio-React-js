@@ -29,7 +29,7 @@
 
 .progress .progress-bar {
     position: relative;
-    background: var(--text-color);
+    background:linear-gradient(20deg,red,black,red);
     animation: animate-positive 2s;
     overflow: visible;
     opacity: 0.9;
