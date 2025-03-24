@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
@@ -17,9 +17,9 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
+          <a  className="navbar-brand nav_ac" href="/">
             {logotext}
-          </Link>
+          </a>
           <div className="d-flex align-items-center">
           <Themetoggle />
           <button className="menu__button  nav_ac" onClick={handleToggle}>
@@ -30,21 +30,21 @@ const Headermain = () => {
         </div>
 
         <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
-          <div className="bg__menu h-100">
+          <div className="bg__menu h-40">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
+                  <a  onClick={handleToggle} href="/#home" className="my-3">Home</a>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/" className="my-3"> Portfolio</Link>
+                    <a  onClick={handleToggle} href="/#myportfolio" className="my-3"> Portfolio</a>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/" className="my-3">About</Link>
+                  <a onClick={handleToggle} href="/#about" className="my-3">About</a>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/" className="my-3"> Contact</Link>
+                  <a onClick={handleToggle} href="/#contact" className="my-3"> Contact</a>
                   </li>
                 </ul>
               </div>
@@ -52,7 +52,7 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
+            <a href={socialprofils.instagram}>Instagram</a>
             <a href={socialprofils.github}>Github</a>
             <a href={socialprofils.twitter}>Twitter</a>
             </div>

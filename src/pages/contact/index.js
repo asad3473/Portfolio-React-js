@@ -43,6 +43,9 @@ export const ContactUs = () => {
             alertmessage: "SUCCESS! ,Thankyou for your messege",
             variant: "success",
             show: true,
+            email: "",
+            name: "",
+            message: "",
           });
         },
         (error) => {
@@ -65,27 +68,24 @@ export const ContactUs = () => {
   };
 
   return (
-    <HelmetProvider>
-      <Container>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>{meta.title} | Contact</title>
-          <meta name="description" content={meta.description} />
-        </Helmet>
-        <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
-        </Row>
+    <HelmetProvider  c>
+      <Container className=" ">
+
+        <a  name="contact">
+          <Row className="">
+            <Col lg="8">
+              <h1 className="display-4 mb-3">Contact Me</h1>
+              <hr className="t_border my-4 ml-0 text-left" />
+            </Col>
+          </Row>
+        </a>
         <Row className="sec_sp">
           <Col lg="12">
             <Alert
               //show={formData.show}
               variant={formData.variant}
-              className={`rounded-0 co_alert ${
-                formData.show ? "d-block" : "d-none"
-              }`}
+              className={`rounded-0 co_alert ${formData.show ? "d-block" : "d-none"
+                }`}
               onClose={() => setFormdata({ show: false })}
               dismissible
             >
@@ -116,7 +116,7 @@ export const ContactUs = () => {
               <Row>
                 <Col lg="6" className="form-group">
                   <input
-                    className="form-control"
+                    className="form-control border border-danger"
                     id="name"
                     name="name"
                     placeholder="Name"
@@ -128,7 +128,7 @@ export const ContactUs = () => {
                 </Col>
                 <Col lg="6" className="form-group">
                   <input
-                    className="form-control rounded-0"
+                    className="form-control border border-danger rounded-0"
                     id="email"
                     name="email"
                     placeholder="Email"
@@ -140,19 +140,19 @@ export const ContactUs = () => {
                 </Col>
               </Row>
               <textarea
-                className="form-control rounded-0"
+                className="form-control rounded-0 border border-danger"
                 id="message"
                 name="message"
                 placeholder="Message"
-                rows="5"
+                rows="3"
                 value={formData.message}
                 onChange={handleChange}
                 required
               ></textarea>
               <br />
               <Row>
-                <Col lg="12" className="form-group">
-                  <button className="btn ac_btn  md:mb-5 btn-outline-info" type="submit">
+                <Col lg="12" className="form-group ">
+                  <button className="btn ac_btn  mb-5 btn-outline-danger" type="submit">
                     {formData.loading ? "Sending..." : "Send"}
                   </button>
                 </Col>

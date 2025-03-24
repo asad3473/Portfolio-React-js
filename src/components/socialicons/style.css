@@ -14,6 +14,7 @@
 }
 
 .stick_follow_icon svg {
+    cursor: pointer;
     width: 1.3em;
     height: 1.3em;
     fill: var(--text-color)

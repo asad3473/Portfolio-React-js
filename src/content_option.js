@@ -25,12 +25,16 @@ const skills = [{
     value: 90,
 },
 {
-    name: "Redux Toolkit",
+    name: "RTK Query",
     value: 85,
 },
 {
     name: "Api Integration",
     value: 90,
+},
+{
+    name: "Material UI",
+    value: 85,
 },
 {
     name: "JavaScript",
@@ -75,81 +79,52 @@ const services = [
 ];
 
 
-const dataportfolio = [{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/800/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/600/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/300/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-
-{
-    img: "https://picsum.photos/400/600/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/300/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/550/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-{
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-},
-];
+const dataportfolio = [
+    {
+      img: "/Images/catalog4.png",
+      description:
+        "Developed a visually appealing and user-friendly website for The Givers Consulting. This platform provides professional consulting services with an intuitive design, seamless navigation, and optimized performance for all devices. Check it out for expert business solutions!",
+      link: "https://thegiversconsulting.com/",
+    },
+    {
+      img: "/Images/catalog2.png",
+      description:
+        "Help to Graduate is a comprehensive platform designed to assist students with academic guidance, career advice, and resources to excel in their studies. Explore this site to make your academic journey smoother!",
+      link: "https://helptograduate.com/",
+    },
+    {
+      img: "/Images/catalog5.png",
+      description:
+        "Trend Car Care offers premium automotive services with expert technicians ensuring high-quality vehicle maintenance. The website is built with a responsive design and easy navigation. Visit now to explore their services!",
+      link: "https://trendcarcare.com/",
+    },
+    {
+      img: "/Images/catalog3.png",
+      description:
+        "Biotech Wallah is a dedicated platform for biotech enthusiasts, providing valuable insights, news, and educational resources. The website is designed for easy access to biotech knowledge. Visit now and expand your learning!",
+      link: "https://biotechwallah.com/",
+    },
+    {
+      img: "/Images/catalog.png",
+      description:
+        "Novieeta is a dynamic e-commerce platform offering top-quality products across various categories. The website ensures a seamless shopping experience with a clean UI and smooth performance. Check it out today!",
+      link: "https://novietaaplus.com/",
+    },
+  ];
+  
 
 const contactConfig = {
     YOUR_EMAIL: "asadsoomro0311@gmail.com",
     YOUR_FONE: "+92 3079873475",
     description: "Feel free to reach out for front-end development projects, UI/UX design, or collaboration opportunities. Let's build something amazing together!",
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_147fy1e",
+    YOUR_TEMPLATE_ID: "template_bymqybb",
+    YOUR_USER_ID: "c-vU5TknOneT0kPmS",
 };
 
 const socialprofils = {
     github: "https://github.com/asad3473",
-    facebook: "https://www.facebook.com/saim.asad.18488/",
+    instagram: "https://www.instagram.com/asdi9873/",
     linkedin: "https://www.linkedin.com/in/asad9873/",
 };
 export {

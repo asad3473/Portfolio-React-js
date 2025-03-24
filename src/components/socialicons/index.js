@@ -34,7 +34,7 @@ export const Socialicons = (params) => {
         {Object.entries(socialprofils).map(([platform, url]) => {
           const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;
           return (
-            <li key={platform}>
+            <li key={platform} >
               <a href={url}>
                 <IconComponent />
               </a>

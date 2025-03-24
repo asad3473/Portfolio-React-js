@@ -16,8 +16,8 @@ export const Home = () => {
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center bg-bg-info">
           <div
-            className="h_bg-image order-1 order-lg-2 h-75 bg-info"
-            style={{ backgroundImage: 'url(/Images/img3.jpg)',backgroundSize:'cover' }}
+            className="h_bg-image order-1 order-lg-2 h-75"
+            style={{ backgroundImage: 'url(/Images/fb.jpg)', backgroundSize: 'cover' }}
 
           ></div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
@@ -39,24 +39,19 @@ export const Home = () => {
                   />
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
-                <div className="intro_btn-action pb-5">
-                  <Link to="/portfolio" className="text_2">
-                    <div id="button_p" className="ac_btn btn ">
+                <div className="intro_btn-action pb-5 gap-3 d-flex flex-wrap">
+                  <a href="/#myportfolio" className="text_2">
+                    <div id="" className="btn btn-outline-danger">
                       My Portfolio
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
                     </div>
-                  </Link>
-                  <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn">
+                  </a>
+                  <a href="/#contact">
+                    <div id="" className="btn btn-outline-danger">
                       Contact Me
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
+
               </div>
             </div>
           </div>

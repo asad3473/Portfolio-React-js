@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
-import AnimatedCursor  from "../hooks/AnimatedCursor";
+import Loader from "../Loader/Loader"; // Import Loader
 import "./App.css";
 import { Portfolio } from "../pages/portfolio";
 import { About } from "../pages/about";
@@ -23,25 +20,30 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading delay
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust time as needed
+  }, []);
+
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <div className="cursor__dot">
-        <AnimatedCursor
-          innerSize={15}
-          outerSize={15}
-          color="255, 255 ,255"
-          outerAlpha={0.4}
-          innerScale={0.7}
-          outerScale={5}
-        />
-      </div>
-      <ScrollToTop>
-        <Headermain />
-        <AppRoutes />
-      </ScrollToTop>
-      <Portfolio/>
-      <About/>
-      <ContactUs/>
-    </Router>
+    <>
+      {loading ? (
+        <Loader /> // Show loader while loading
+      ) : (
+        <Router basename={process.env.PUBLIC_URL}>
+          <ScrollToTop>
+            <Headermain />
+            <AppRoutes />
+          </ScrollToTop>
+          <Portfolio />
+          <About />
+          <ContactUs />
+        </Router>
+      )}
+    </>
   );
 }

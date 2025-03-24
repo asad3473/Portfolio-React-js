@@ -21,6 +21,8 @@
 html,
 body {
     height: 100%;
+    /* background-color: #fff; */
+  
 }
 
 body {
@@ -64,6 +66,9 @@ p {
 .ovhidden {
     overflow: hidden;
 }
+* {
+    cursor: auto ;  /* Force system default cursor */
+  }
 
 .text_2,
 .text_2:hover {
